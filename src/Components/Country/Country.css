@@ -1,0 +1,18 @@
+.single-country{
+    background-color: rgb(247, 244, 244);
+    margin: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+}
+
+.flag-img{
+  height: 150px;
+}
+.show-details{
+    font-weight: 500;
+    color: rgb(199, 15, 9);
+}
+.link{
+  text-decoration: none;
+}

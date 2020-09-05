@@ -1,23 +1,36 @@
 import React from 'react';
 import Home from './Components/Home/Home';
+import NoMatch from './Components/NoMatch/NoMatch';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
-import NoMatch from './Components/NoMatch/NoMatch';
-import FriendDetail from './Components/FriendDetail/FriendDetail';
+import CountryDetails from './Components/CountryDetails/CountryDetails';
+import Header from './Components/Header/Header';
+import Contact from './Components/ContactUs/Contact';
+import Population from './Components/Population/Population';
+
 
 const App = () => {
   return (
     <Router>
+      <Header/>
       <Switch>
         <Route path='/home'>
           <Home/>
         </Route>
-        <Route path='/friend/:friendId'>
-          <FriendDetail/>
+        <Route exact path='/country/:countryName'>
+          <CountryDetails/>
+        </Route>
+        <Route path='/contact'>
+          <Contact/>
+        </Route>
+        <Route path='/:countryArea'>
+          <Population/>
+        </Route>
+        <Route path='/population'>
+          <Population/>
         </Route>
         <Route exact path='/'>
           <Home/>
