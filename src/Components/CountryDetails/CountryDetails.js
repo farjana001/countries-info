@@ -31,7 +31,7 @@ const CountryDetails = () => {
                 country.name && <p>altSpellings : {altSpellings}</p>
             }
             {
-                country.altSpellings && <p>altSpellings : {altSpellings.map(alt => <span key={country.name + Math.random()}>{alt}, </span>)}</p>
+                country.altSpellings && <p>altSpellings : {altSpellings.map(alt => <span key={country.name + Math.random()}>{alt} </span>)}</p>
             }
             {/* <p>{altSpellings}</p> */}
             <button className='btn btn-danger my-2'>Add Country</button>
