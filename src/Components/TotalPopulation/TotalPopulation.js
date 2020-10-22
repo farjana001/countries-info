@@ -2,10 +2,10 @@ import React from 'react';
 
 const TotalPopulation = (props) => {
     const population = props.population;
-    const total = population.reduce((total, ppl) => total + ppl.population, 0)
+    // const total = population.reduce((total, ppl) => total + ppl.population, 0)
     return (
         <div>
-            <h4 className='text-danger mt-4 ml-2'>Total Population : {total}</h4>
+            <h4 className='text-danger mt-4 ml-2'>Total Population : </h4>
             <div>
                 {
                     population.map(ppl => {
